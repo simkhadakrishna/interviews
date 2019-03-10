@@ -26,7 +26,7 @@ public class Employee {
 		return Objects.hash(id);
 	}
 
-	/*@Override
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -38,7 +38,7 @@ public class Employee {
 		if (id != other.id)
 			return false;
 		return true;
-	}*/
+	}
 	
 
 }

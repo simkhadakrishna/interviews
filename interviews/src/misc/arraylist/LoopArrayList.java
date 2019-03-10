@@ -1,3 +1,11 @@
+/**
+ * ArrayList is a Collection class that implements List interface and it is based on an array data structure.
+ * Most of the developers choose ArrayList over Array because of the functionality and flexibility of it.
+ * ArrayList is a re-sizable-array implementaion of List interface. ArrayList can dynamically grow and shrink
+ * after addition or removal of elements. Apart from these benefits, ArrayList class enables us to use pre-
+ * defined methods which makes our job easy.
+ */
+
 package misc.arraylist;
 
 import java.util.ArrayList;
@@ -22,11 +30,12 @@ public class LoopArrayList {
 			//sort
 			System.out.println("Ascending order");
 			Collections.sort(arrList);
+			System.out.println(arrList);
 		/*ArrayList<Integer> arrList = (ArrayList<Integer>) Arrays.asList(5, 7, 9, 14, 21);*/
 			//For Loop
 			System.out.println("For Loop");
-			for(int counter = 0; counter<arrList.size(); counter++) {
-				Integer integer = arrList.get(counter);
+			for(int i = 0; i<arrList.size(); i++) {
+				Integer integer = arrList.get(i);
 				System.out.print(integer + " ");
 			}
 			//Advanced For Loop
@@ -46,6 +55,8 @@ public class LoopArrayList {
 			//Iterator
 			Collections.sort(arrList, Collections.reverseOrder());
 			System.out.println();
+			System.out.println("Reverse Order");
+			System.out.println(arrList);
 			System.out.println("Iterator");
 			Iterator<Integer> iterator = arrList.iterator();
 			while(iterator.hasNext()) {
