@@ -18,7 +18,9 @@ public class StudentTest {
 			set.add(s1);
 			set.add(s2);
 			set.add(s3);
-			
+			System.out.println(s1.hashCode());
+			System.out.println(s2.hashCode());
+			System.out.println(s3.hashCode());
 			System.out.println(set.size());
 	}
 

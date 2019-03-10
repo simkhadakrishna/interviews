@@ -29,12 +29,13 @@ public class Student {
 	
 	@Override
 	public boolean equals(Object obj) {
-		if(obj == null) return false;
-		if(!(obj instanceof Student)) return false;
-		Student s2 = (Student)obj;
-		return firstName.equalsIgnoreCase(s2.getFirstName()) &&
-				lastName.equalsIgnoreCase(s2.getLastName()) &&
-				ssn == s2.getSsn();
+		//if(obj == null) return false;
+		//if(!(obj instanceof Student)) return false;
+		if((obj instanceof Student)) return true;
+		Student s = (Student)obj;
+		return firstName.equalsIgnoreCase(s.getFirstName()) &&
+				lastName.equalsIgnoreCase(s.getLastName()) &&
+				ssn == s.getSsn();
 	}
 	@Override
 	public int hashCode() {

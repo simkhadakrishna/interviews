@@ -22,6 +22,8 @@ public class EmployeeTest {
 		Map<Employee, String> map = new HashMap<>();
 		map.put(emp1, "jack");
 		map.put(emp2, "jack");
+		System.out.println(emp1.hashCode());
+		System.out.println(emp2.hashCode());
 		System.out.println(map.size());
 		
 		Integer i = new Integer(1);
