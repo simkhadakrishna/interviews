@@ -1,5 +1,6 @@
 package singleton;
 //comment added
+//added second comment
 public class Company {
 	
 	private static Company instance = new Company();
