@@ -1,5 +1,5 @@
 package singleton;
-
+//comment added
 public class Company {
 	
 	private static Company instance = new Company();
